@@ -1,0 +1,46 @@
+body {
+    overflow: hidden;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.mainview-wrapper {
+    display: flex;
+    max-height: 100vh;
+}
+
+.mainview-left-group {
+    flex: 1;
+}
+
+.bar-list {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.mainview-right-group {
+    flex: 1;
+}
+
+.gmap-div {
+    height: 100%;
+    width: 100%;
+}

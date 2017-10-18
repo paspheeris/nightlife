@@ -31,13 +31,19 @@ body {
     flex: 1;
 }
 
+.mainview-right-group {
+    flex: 1;
+}
+
+@media(max-width: 700px) {
+    .mainview-right-group {
+        display: none;
+    }
+}
+
 .bar-list {
     overflow-y: scroll;
     height: 100%;
-}
-
-.mainview-right-group {
-    flex: 1;
 }
 
 .gmap-div {

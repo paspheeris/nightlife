@@ -20,7 +20,7 @@ class SearchForm extends Component {
   }
   render() {
     return (
-      <form className="search-form" onSubmit={this.hur}>
+      <form className="search-form" onSubmit={this.handleFormSubmit}>
         <Input fluid type="text" value={this.state.value} placeholder="enter a location, eg 'oakland'" icon="search" onKeyDown={this.handleKeyDown} />
       </form>
     )
@@ -28,7 +28,7 @@ class SearchForm extends Component {
   handleKeyDown = (event) => {
     this.setState({ formText: event.target.value });
   }
-  hur = (event) => {
+  handleFormSubmit = (event) => {
     event.preventDefault();
     const payload = APIs.Yelp.getBars(this.state.formText);
     this.props.searchFormSubmit(payload);

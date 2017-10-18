@@ -37,12 +37,6 @@ const Bar = ({ id, name, image_url, url, rating, price, display_phone, categorie
       </Card.Description>
     </Card.Content>
   </Card>
-  // <li>
-  //   <p>{name}</p>
-  //   <img className="bar-image" src={image_url} alt="alt_image_text"/>
-  //   <p>{price}</p>
-  //   <p>{`${categories}`}</p>
-  // </li>
 )
 const generateIcons = (rating, fullIcon, halfIcon = false, color = "black") => {
   let count = 0;

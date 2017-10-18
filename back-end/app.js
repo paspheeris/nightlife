@@ -8,21 +8,12 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 const cors = require('cors');
-// const mongoose = require('mongoose');
 var app = express();
-// if (process.env.NODE_ENV === 'development') {
 app.use(cors());
-// }
 require('dotenv').config();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
-// mongoose.connect(process.env.DATABASE);
-// mongoose.Promise = global.Promise; //tell mongoose to use ES6 promises
-// mongoose.connection.on('error', (err) => {
-// console.error(err.message);
-// });
 
 // uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

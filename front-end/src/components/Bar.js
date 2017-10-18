@@ -21,8 +21,9 @@ const propTypes = {
 const defaultProps = {}
 
 const Bar = ({ id, name, image_url, url, rating, price, display_phone, categories, address, coordinates, cardMouseEnter, cardMouseExit }) => (
-  <Card fluid href={url} target="_blank" onMouseOver={() => cardMouseEnter(coordinates)} onMouseOut={cardMouseExit}>
-    <Image src={image_url} className="bar-image" />
+  <Card href={url} target="_blank" onMouseOver={() => cardMouseEnter(coordinates)}
+    onMouseOut={cardMouseExit} centered>
+    <Image src={image_url} className="bar-image" size="large" />
     <Card.Content>
       <Card.Header>{name}</Card.Header>
       <Card.Meta>{categories}</Card.Meta>
@@ -36,7 +37,7 @@ const Bar = ({ id, name, image_url, url, rating, price, display_phone, categorie
         <Icon name="marker" />{address}
       </Card.Description>
     </Card.Content>
-  </Card>
+  </Card >
 )
 const generateIcons = (rating, fullIcon, halfIcon = false, color = "black") => {
   let count = 0;
